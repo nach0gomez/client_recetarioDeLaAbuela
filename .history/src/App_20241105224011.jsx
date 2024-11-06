@@ -13,9 +13,9 @@ import { IngredientesForm } from './pages/IngredientesForm'
 function App() {
   return (
     <BrowserRouter> 
-    <Navbar />
       <Navigation/>
       <Routes>
+        <Navbar />
         <Route path='/' element={< Navigate to ="/recetas"  />} />
         <Route path='/recetas' element={<RecetasPagina/>} />
         <Route path='/recetas/:id' element={<RecetasForm/>} />

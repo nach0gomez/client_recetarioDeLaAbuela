@@ -5,7 +5,6 @@ import { RecetasPagina } from './pages/RecetasPagina'
 
 // importamos los componentes
 import { Navigation } from './components/navigation'
-import { Navbar } from './components/navbar/navbar'
 import './App.css'
 import { IngredientesPagina } from './pages/IngredientesPagina'
 import { IngredientesForm } from './pages/IngredientesForm'
@@ -13,7 +12,6 @@ import { IngredientesForm } from './pages/IngredientesForm'
 function App() {
   return (
     <BrowserRouter> 
-    <Navbar />
       <Navigation/>
       <Routes>
         <Route path='/' element={< Navigate to ="/recetas"  />} />

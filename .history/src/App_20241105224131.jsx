@@ -16,6 +16,7 @@ function App() {
     <Navbar />
       <Navigation/>
       <Routes>
+        
         <Route path='/' element={< Navigate to ="/recetas"  />} />
         <Route path='/recetas' element={<RecetasPagina/>} />
         <Route path='/recetas/:id' element={<RecetasForm/>} />
