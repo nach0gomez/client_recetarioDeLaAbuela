@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,12 +10,11 @@ import Logout from "./login/Logout";
 
 
 export function Navigation() {
-  const { isAuth, deleteToken } = useAuth();
-  const navigate = useNavigate();
+  const { isAuth, logout } = useAuth();
 
   function logout() {
     deleteToken();
-    navigate('login');
+    Navigate('login');
   }
   
 

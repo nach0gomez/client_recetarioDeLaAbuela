@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
         setIsAuth(true);
     };
 
-    const deleteToken = () => {
+    const logout = () => {
         localStorage.removeItem(ACCESS_TOKEN);
         setIsAuth(false);
        
@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   
 
     return (
-        <AuthContext.Provider value={{ isAuth, login, deleteToken }}>
+        <AuthContext.Provider value={{ isAuth, login, logout }}>
             {children}
         </AuthContext.Provider>
     );
