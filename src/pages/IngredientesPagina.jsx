@@ -1,6 +1,9 @@
 
+import { IngredientesList } from "./../components/IngredientesList";
+
+
 export function IngredientesPagina() {
     return (
-      <div>Pagina de Ingredientes</div>
+      <IngredientesList />
     )
   }
