@@ -32,13 +32,6 @@ export function RecetasForm() {
             console.log('modificando receta');
             const response = await updateReceta(params.id, formData);
             console.log(response);
-            toast.success('Receta actualizada', {
-              position: "bottom-right",
-              style: {
-                background: "#101010",
-                color: "#ffffff"
-              }
-            });
             navigate('/recetas');
             return;
         }
